@@ -1,0 +1,9 @@
+*::after, *::before, *{
+    box-sizing: border-box;
+}
+
+:root{
+
+    --soft-red:  hsl(10, 79%, 65%);
+    --p-fonts: 18px;
+}
