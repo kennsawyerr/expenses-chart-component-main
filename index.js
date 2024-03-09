@@ -1,1 +1,0 @@
-const newValue = document.getElementById("empty")
