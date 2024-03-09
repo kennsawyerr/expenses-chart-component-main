@@ -23,15 +23,17 @@
   --heading1: 30px;
   --heading2: 24px;
 }
-
 body {
   background-color: var(--Cream);
   font-size: var(--regular);
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
 
 .header {
   background-color: var(--bg-color);
-  padding: 50px;
+  padding: 20px;
   border-radius: 12px;
   margin: 10px auto;
   color: white;
@@ -43,11 +45,49 @@ body {
   max-width: 1440px;
 }
 
-@media screen and (max-width:400px) and (min-width:200px){
-  
-    .container {
-        margin: 0 auto;
-        width: 90%;
-        max-width: 375px;
-      }
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sm-txt {
+  font-size: 13px;
+}
+.md-txt {
+}
+.lg-txt {
+  font-size: var(--heading2);
+}
+.grey-col {
+  color: var(--Mediumbrown);
+}
+
+ul {
+  list-style: none;
+}
+
+.days {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+section {
+  background-color: var(--Very-pale-orange);
+  color: var(--Darkbrown);
+  border-radius: 12px;
+}
+.text-box {
+  width: 80%;
+  margin: auto;
+  padding: 20px 0;
+}
+
+@media screen and (max-width: 400px) and (min-width: 200px) {
+  .container {
+    margin: 0 auto;
+    width: 90%;
+    max-width: 375px;
+  }
 }
