@@ -1,11 +1,30 @@
-*::after, *::before, *{
-    box-sizing: border-box;
+*::after,
+*::before,
+* {
+  box-sizing: border-box;
 }
 
-:root{
+:root {
+  --bg-color: hsl(10, 79%, 65%);
+  --p-fonts: 18px;
+  --hero-font: 26px;
+  --: hsl(186, 34%, 60%);
 
-    --soft-red:  hsl(10, 79%, 65%);
-    --p-fonts: 18px;
-    --hero-font: 26px;
-    
+  --Darkbrown: hsl(25, 47%, 15%);
+--Mediumbrown: hsl(28, 10%, 53%);
+--Cream: hsl(27, 66%, 92%);
+--Very-pale-orange: hsl(33, 100%, 98%);
+}
+
+body {
+  background-color: var(--Cream);
+  font-size: 18px;
+}
+
+.header {
+  background-color: var(--bg-color);
+  padding: 50px;
+  border-radius: 12px;
+  margin: 10px auto;
+  color: white;
 }
