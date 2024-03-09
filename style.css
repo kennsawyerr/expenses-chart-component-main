@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+
 *::after,
 *::before,
 * {
@@ -11,14 +13,20 @@
   --: hsl(186, 34%, 60%);
 
   --Darkbrown: hsl(25, 47%, 15%);
---Mediumbrown: hsl(28, 10%, 53%);
---Cream: hsl(27, 66%, 92%);
---Very-pale-orange: hsl(33, 100%, 98%);
+  --Mediumbrown: hsl(28, 10%, 53%);
+  --Cream: hsl(27, 66%, 92%);
+  --Very-pale-orange: hsl(33, 100%, 98%);
+
+  /* Font size */
+
+  --regular: 18px;
+  --heading1: 30px;
+  --heading2: 24px;
 }
 
 body {
   background-color: var(--Cream);
-  font-size: 18px;
+  font-size: var(--regular);
 }
 
 .header {
@@ -27,4 +35,19 @@ body {
   border-radius: 12px;
   margin: 10px auto;
   color: white;
+}
+
+.container {
+  margin: 0 auto;
+  width: 90%;
+  max-width: 1440px;
+}
+
+@media screen and (max-width:400px) and (min-width:200px){
+  
+    .container {
+        margin: 0 auto;
+        width: 90%;
+        max-width: 375px;
+      }
 }
