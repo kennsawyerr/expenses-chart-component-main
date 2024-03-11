@@ -42,6 +42,9 @@ body {
   margin: 10px auto;
   color: white;
   width: 500px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .container {
@@ -50,6 +53,9 @@ body {
   max-width: 1440px;
 }
 
+.logo {
+  margin-right: 10px;
+}
 .flex {
   display: flex;
   align-items: center;
@@ -62,7 +68,8 @@ body {
 .md-txt {
 }
 .lg-txt {
-  font-size: var(--heading2);
+  font-size: var(--heading1);
+  font-weight: 900;
 }
 .grey-col {
   color: var(--Mediumbrown);

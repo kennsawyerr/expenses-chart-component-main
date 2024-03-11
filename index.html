@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
+
     <link rel="stylesheet" href="style.css" />
     <link
       rel="icon"
@@ -21,6 +21,7 @@
           <li>My balance</li>
           <li class="lg-txt">$921.48</li>
         </ul>
+        <img src="./images/logo.svg" class="logo" a logo" />
       </div>
 
       <section>
@@ -28,6 +29,7 @@
           <h2>Spending - Last 7 days</h2>
 
           <div>
+            <canvas id="myChart" style="width:100%;max-width:700px"></canvas>
             <ul class="days">
               <li>mon</li>
               <li>tue</li>
@@ -56,5 +58,6 @@
     </div>
 
     <script src="index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
   </body>
 </html>
