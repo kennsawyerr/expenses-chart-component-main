@@ -66,6 +66,7 @@ body {
   font-size: 13px;
 }
 .md-txt {
+  font-size: var(--heading2);
 }
 .lg-txt {
   font-size: var(--heading1);
