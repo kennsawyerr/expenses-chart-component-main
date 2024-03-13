@@ -1,12 +1,3 @@
-/* 
-Functionalities
-View the bar chart and hover over the individual bars to see the correct amounts for each day
-- See the current day's bar highlighted in a different colour to the other bars
-- View the optimal layout for the content depending on their device's screen size
-- See hover states for all interactive elements on the page
-- **Bonus**: See dynamically generated bars based on the data provided in the local JSON file
-
-*/
 // const file  = data.json
 const blueColor = "hsl(186, 34%, 60%)";
 const pinkColor = "hsl(10, 79%, 65%)";
@@ -35,9 +26,41 @@ new Chart("myChart", {
   },
   options: {
     legend: { display: false },
-    title: {
-      display: true,
-      // text: "World Wine Production 2018",
+    yAxes: [
+      {
+        display: false, // Hide the vertical axis
+      },
+    ],
+    grid: {
+      display: false,
+    },
+    x: {
+      grid: {
+        display: false,
+      },
+      border: {
+        display: false,
+      },
     },
   },
+  // options: {
+  //   scales: {
+
+  //   },
+  // },
+  // grid: {
+  //   display: false,
+  // },
+  // border: {
+  //   display: false,
+  // },
+  // //   options: {
+  //     scales: {
+  //         yAxes: [{
+  //             display: false // Hide the vertical axis
+  //         }]
+  //     }
+  // }
 });
+
+/* */
